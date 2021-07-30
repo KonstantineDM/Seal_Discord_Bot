@@ -90,7 +90,7 @@ async def pause(context):
 async def resume(context):
     voice_client = discord.utils.get(client.voice_clients, guild=context.guild)
     if voice_client.is_paused(): voice.resume()
-    else: context.send("Музыка не стоит на паузе")
+    else: context.send("Сейчас ничего не играет")
 
 @bot.command()
 async def stop(context):
@@ -99,6 +99,7 @@ async def stop(context):
     else: context.send("Сейчас ничего не играет")
 
 # 🎶
+
 
 if __name__ == '__main__':
     # run a Client
