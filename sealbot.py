@@ -29,7 +29,7 @@ async def on_message(message):
             hello_picture = discord.File(file)
             await message.channel.send(file=hello_picture)
 
-# TODO: check if this function works
+# TODO: check if this function works.
 @bot.event
 async def on_member_join(member):
         with open(r'.\assets\hello\hey-gif.gif', 'rb') as file:
